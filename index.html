@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" id="changeTheme">
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -15,7 +15,16 @@
     }
   </style>
   <!-- External Module exports below  -->
-
+  <script>
+    function changeTheme() {
+      const theme = document.getElementById('changeTheme');
+      if (theme.getAttribute('data-theme') === 'dark') {
+        theme.setAttribute('data-theme', 'light');
+      } else {
+        theme.setAttribute('data-theme', 'dark');
+      }
+    }
+  </script>
 
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -42,18 +51,16 @@
             <li><a>Home</a></li>
             <li>
               <a>Free Fire</a>
-              <ul class="p-2">
-                <li><a>Free Fire</a></li>
-                <li><a>FF Lite</a></li>
-              </ul>
             </li>
+
+            <!-- </li>
             <li></li>
             <a>Emulator</a>
             <ul class="p-2">
               <li><a>Free</a></li>
               <li><a>Premium</a></li>
             </ul>
-            </li>
+            </li> -->
             <li><a>Others</a></li>
           </ul>
         </div>
@@ -62,15 +69,8 @@
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li><a>Home</a></li>
-          <li>
-            <details>
-              <summary>Free Fire</summary>
-              <ul class="p-2">
-                <li><a>Free Fire </a></li>
-                <li><a>FF Lite</a></li>
-              </ul>
-            </details>
-          </li>
+          <li><a>Free Fire</a></li>
+
           <li>
             <details>
               <summary>Emulator</summary>
@@ -84,22 +84,23 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn" onclick="commingSoon()"><img src="./assets/icons/userIcon.svg" class="w-5 h-5" />Profile</a>
+        <a class="btn" onclick="changeTheme()"> <img src="assets/icons/swap.png" class="w-4 h-5" /></a>
       </div>
     </div>
   </header>
   <main class="container mx-auto">
-    <div class="hero bg-base-200 rounded-2xl min-h-screen">
+    <div class="hero min-h-screen rounded-2xl" style="background: linear-gradient(135deg, #667eea, #764ba2);">
       <div class="hero-content text-center">
         <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Hello there !</h1>
-          <p class="py-6">
+          <h1 class="text-5xl font-bold text-white">Hello there!</h1>
+          <p class="py-6 text-white">
             Get top-quality apps for your computer with no annoying ads or distractions.
           </p>
           <button class="btn btn-primary">Try MuradianCLX</button>
         </div>
       </div>
     </div>
+
   </main>
   <div class="container mx-auto">
     <footer class="footer   text-neutral-content items-center px-4 p-4">
