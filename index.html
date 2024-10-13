@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark" id="changeTheme">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/gamer.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -33,7 +33,7 @@
 
   <script src="./main.js"></script>
   <!--  -->
-  <title>A2M Store</title>
+  <title>Muradian Store</title>
 </head>
 <body>
   <!-- Header section for show the navbar  -->
@@ -106,12 +106,12 @@
     </div>
 
     <!-- Free Fire download div -->
-    <div class="container flex flex-col md:flex-row mx-auto items-center justify-center my-10">
+    <section class="container flex flex-col md:flex-row mx-auto items-center justify-center my-10">
       <!-- First card  -->
-      <div class="card bg-base-100 w-96 shadow-xl mx-2">
+      <div class="card bg-base-100 w-96 shadow-xl mx-2 my-3">
         <figure class="px-10 pt-10">
-          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
-            class="rounded-xl" />
+          <img src="https://th.bing.com/th/id/R.5e850a1f8e9150570271637b15eefa01?rik=ES3Hr9c%2fEXnfjA&pid=ImgRaw&r=0"
+            alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Free Fire<div class="badge badge-secondary">Lite</div>
@@ -120,16 +120,36 @@
             uses less RAM
             and processing power, ensuring that users can enjoy the game even on budget smartphones.</p>
           <div class="card-actions">
-            <a href="https://drive.google.com/uc?id=1CZpC3dMJNQNA6UcomQSs1HdX2xvAaChO" download><button
-                class="btn btn-primary">Download Now</button></a>
+            <button class="btn btn-primary" onclick="my_modal_5.showModal()">Download Now</button>
           </div>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">How to download this XAPK</h3>
+              <p class="py-4">Please Download the XAPK installer first</p>
+
+              <!-- Download button inside the modal -->
+              <div class="modal-action">
+                <a href="https://drive.google.com/uc?id=1gs04xggFkVwSP1krrdU8HwWGYFKe4xFv&export=download"
+                  target="_blank" download>
+                  <button class="btn btn-primary">Download Installer</button>
+                </a>
+                <a href="https://drive.google.com/uc?id=1CZpC3dMJNQNA6UcomQSs1HdX2xvAaChO" target="_blank" download>
+                  <button class="btn btn-secondary">Download FF Lite</button>
+                </a>
+                <!-- Close button -->
+                <form method="dialog">
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
       <!-- Second card -->
-      <div class="card bg-base-100 w-96 shadow-xl mx-2">
+      <div class="card bg-base-100 w-96 shadow-xl mx-2 my-3">
         <figure class="px-10 pt-10">
-          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
-            class="rounded-xl" />
+          <img src="https://th.bing.com/th/id/R.5e850a1f8e9150570271637b15eefa01?rik=ES3Hr9c%2fEXnfjA&pid=ImgRaw&r=0"
+            alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Free Fire<div class="badge badge-primary">Mid Range</div>
@@ -139,14 +159,18 @@
             and processing power, ensuring that users can enjoy the game even on Mid range smartphones.Download this
             play</p>
           <div class="card-actions">
-            <a href="https://drive.google.com/uc?id=1CZpC3dMJNQNA6UcomQSs1HdX2xvAaChO" download><button
+            <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth" download><button
                 class="btn btn-primary">Download Now</button></a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!--  -->
+    <!-- Emulator Section -->
+    <!--  -->
   </main>
-  <div class="container mx-auto absolute bottom-3 right-0 left-0">
+  <div class="container mx-auto md:absolute md:bottom-3 md:right-0 md:left-0">
     <footer class="footer   text-neutral-content items-center px-4 p-4">
       <aside class="grid-flow-col items-center">
         <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
